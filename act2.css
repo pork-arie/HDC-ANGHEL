@@ -409,6 +409,7 @@ footer p{
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
 }
 
 .links{
@@ -475,7 +476,7 @@ nav,header,section,footer{
 
     .navbar{
         padding: 15px 10px;
-        justify-content: space-between;
+        justify-content: center;
     }
     .navbar ul li a{
         font-size: 14px;
@@ -592,7 +593,6 @@ nav,header,section,footer{
         width: 100%;
         gap: 20px;
         display: flex;
-        align-items: center;
         padding: 10px;
     }
 
@@ -1174,6 +1174,5 @@ nav,header,section,footer{
         font-size: 13px;
     }  
 }
-
 
 
