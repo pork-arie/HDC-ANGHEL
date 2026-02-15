@@ -592,6 +592,7 @@ nav,header,section,footer{
         width: 100%;
         gap: 20px;
         display: flex;
+        align-items: center;
         padding: 10px;
     }
 
@@ -1173,5 +1174,6 @@ nav,header,section,footer{
         font-size: 13px;
     }  
 }
+
 
 
