@@ -1,0 +1,1177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #050505;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.03); 
+    border:2px solid rgba(255, 255, 255, 0.2); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar .logo{
+    font-weight: 800;
+    font-size: 1.5rem
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+}
+.navbar ul li a{
+    color: grey;
+    font-size: 20px;
+}
+
+.navbar a{
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.contact{
+    border:1px solid white;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.contact:hover{
+    cursor: pointer;
+    transform: scale(1);
+    background-color: antiquewhite;
+    color:black !important;
+    box-shadow: 0 6px 9px rgba(255, 255, 255, 0.03);
+}
+
+
+
+/**********************/
+.main-header{
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+
+}
+.main-header .Htext{
+    font-size: clamp(3rem, 10vw, 10rem);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to bottom, white, #000000);
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s;
+}
+
+
+.main-header p,
+.main-header h2{
+    color: gray;
+    transition: all 0.5s ease-in-out;
+}
+.main-header p:hover,
+.main-header h2:hover{
+   cursor: pointer;
+   color: white;
+   text-shadow: 0 0 8px white;
+}
+
+
+/***************************************** about***/
+
+.about-card{
+    background: #050505;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 40px auto;
+    margin-top: 10%;
+}
+
+
+
+.profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    object-fit:cover;
+    border: 4px solid #363f58;  
+}
+
+.idtag{
+    color:#3b82f6;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    color: white;
+}
+.descrp{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+
+}
+
+.skill{
+    display: flex;
+    gap: 10px;
+}
+
+.SK{
+    background:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.SK:hover{
+    cursor: pointer;
+    transform:translateY(-5px);
+    box-shadow: 0 0 9px whitesmoke;
+
+}
+
+
+
+.VM{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    margin-top: -3%;
+}
+.V{
+    background:#050505;
+    border:2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 20px ;
+    margin: 30px;
+    margin-top: 5%;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.V:hover{
+    cursor: pointer;
+    transform:translateY(-5px);
+    background-color: whitesmoke;
+    color: black;
+    
+}
+
+.M{
+    background:#050505;
+    border:2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px ;
+    margin: 30px ;
+    margin-top: 5%; 
+    transition: all 0.5s ease-in-out;
+}
+.M:hover{
+    cursor: pointer;
+    transform:translateY(-5px);
+    background-color: whitesmoke;
+    color: black;
+}
+
+/****************servicer***/
+
+
+.con1{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 7%;
+    padding:2rem;
+    align-items: center;
+}
+.sub1{
+    text-align: center;
+}
+.sub1 h2{
+
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.5;
+    line-height: 2;
+}
+.pic1 img{
+    border-radius: 80px;
+    padding: 20px;
+    border-top: 4px solid#363f58;
+}
+.sub1 p{
+    font-size: 20px;
+}
+
+
+.con2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+}
+
+.sub2{
+    text-align: center;
+}
+
+.prob2{
+    border-radius: 80px;
+    width: 100%;
+    padding: 20px;
+    border-top: 4px solid#363f58;
+    
+}
+
+.sub2 h2{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.5;
+    line-height: 1;
+}
+
+.sub2 p{
+    line-height: 3;
+    font-size: 20px;
+}
+
+
+.con3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+}
+
+.sub3{
+    text-align: center;
+}
+
+.sub3 h2{
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 1;
+    line-height: 1;
+}
+.sub3 p{
+    line-height: 3;
+    font-size: 20px;
+}
+
+.codepc{
+    border-radius: 80px;
+    padding: 20px;
+    width: 100%;
+    border-top: 4px solid#363f58;
+}
+/***********contact ***/
+.cont-body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;    
+}
+main{
+    flex: 1;
+}
+
+
+.cont-wrapper{
+    margin-top: 10%;
+}
+
+.cont{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.cont h1{
+    font-weight: 900;
+}
+.myloc{
+    font-size: 30px;
+}
+
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.form{
+    background-color: transparent;
+    padding-top: 20px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+label{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#desc{
+    margin-left: 14%;
+
+}
+input{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.inde{
+    min-height: 50px;
+    max-height: 60x;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button{
+    width: 20vh;
+    margin-left: 20%;
+    padding: 20px;
+    border-radius: 20px;
+    background:whitesmoke;
+    font-family: system-ui;
+    transition: all 0.5s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    background: #3b82f6;
+    
+
+}
+
+footer{
+    color: black;
+    padding: 15px;
+    background: whitesmoke;
+    
+}
+footer p{
+  border-top: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.footwrap{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    
+    
+}
+.links a{
+     color: #000000;
+     text-decoration: none;
+     
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+span a{
+    color: #000000;
+    text-decoration:none ;
+}
+.flogo{
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 10%;
+    align-self: center;
+}
+
+/***********animation***/
+
+@keyframes entry{
+    from{
+     opacity: 0;
+     transform: translateY(10px);
+    }to{
+         opacity: 1;
+     transform: translateY(0);
+
+    }
+
+}
+
+nav,header,section,footer{
+    animation: entry 0.5s ease-in-out;
+}
+
+/****** layout**/
+
+@media only screen and (max-width:480px) {
+
+    .main-header{
+     
+     flex-direction: column;
+     margin-top: 40%;
+    }
+
+    .main-header .Htext{
+        font-size: 75px;
+    }
+
+    .navbar{
+        padding: 15px 10px;
+        justify-content: space-between;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+    .navbar a{
+        font-size: 10px;
+        text-align: center;
+    }
+    .navbar .logo{
+        font-size: 20px;
+    }
+
+    .about-card{
+        width: 280px;
+        flex-direction: column;
+        margin-top: 35%;
+    }
+
+    .profile{
+        height: 150px;
+        width: 150px;
+
+    }
+    
+    .idtag{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .SK{
+        font-size: 15px;
+
+    }
+
+    .VM{
+        font-size: 10px;
+    }
+    
+
+    .con1{
+        margin-top: 20%;
+    }
+    .sub1 h2{
+        line-height: 1;
+        font-size: 15px;
+    }
+    .sub1 p{
+        font-size: 10px;
+    }
+    .s2{
+        height: 250px;
+        width: 250px;
+    }
+
+    .sub2 h2{
+        font-size: 15px;
+    }
+    .sub2 p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .prob2{
+        height: 250px;
+        width: 250px;
+        
+    }
+
+    .sub3 h2{
+        font-size: 15px;
+    }
+    .sub3 p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .codepc{
+        height: 250px;
+        width: 250px;
+    }
+    
+    .cont{
+        margin-top: 20%;
+        
+    }
+    .cont h1{
+        font-size: 50px;
+       
+    }
+
+    .myloc{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    input{
+        width: 30vh;
+    }
+    .inde{
+        width: 30vh;
+    }
+
+    .flogo{
+        font-size: 20px;
+        margin-left: 10px;
+        
+    }
+    .footwrap{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        padding: 10px;
+    }
+
+    .links{
+        font-size: 10px;
+    }
+
+    .Info{
+        font-size: 10px;
+        
+    }
+
+    footer p{
+        font-size: 8px;
+    }  
+}
+
+@media only screen and (min-width:601px) {
+
+    .main-header{
+     
+     flex-direction: column;
+     margin-top: 40%;
+    }
+
+    .main-header .Htext{
+        font-size: 75px;
+    }
+
+    .navbar{
+        padding: 15px 10px;
+        justify-content: center;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+    .navbar a{
+        font-size: 10px;
+        text-align: center;
+    }
+    .navbar .logo{
+        font-size: 20px;
+    }
+
+    .about-card{
+        width: 280px;
+        flex-direction: column;
+        margin-top: 35%;
+    }
+
+    .profile{
+        height: 150px;
+        width: 150px;
+
+    }
+    
+    .idtag{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .SK{
+        font-size: 15px;
+
+    }
+
+    .VM{
+        font-size: 10px;
+    }
+    
+
+    .con1{
+        margin-top: 20%;
+    }
+    .sub1 h2{
+        line-height: 1;
+        font-size: 15px;
+    }
+    .sub1 p{
+        font-size: 10px;
+    }
+    .s2{
+        height: 250px;
+        width: 250px;
+    }
+
+    .sub2 h2{
+        font-size: 15px;
+    }
+    .sub2 p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .prob2{
+        height: 250px;
+        width: 250px;
+        
+    }
+
+    .sub3 h2{
+        font-size: 15px;
+    }
+    .sub3 p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .codepc{
+        height: 250px;
+        width: 250px;
+    }
+    
+    .cont{
+        margin-top: 20%;
+        
+    }
+    .cont h1{
+        font-size: 50px;
+       
+    }
+
+    .myloc{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    input{
+        width: 30vh;
+    }
+    .inde{
+        width: 30vh;
+    }
+
+    .flogo{
+        font-size: 20px;
+        margin-left: 10px;
+        
+    }
+    .footwrap{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        padding: 10px;
+    }
+
+    .links{
+        font-size: 10px;
+    }
+
+    .Info{
+        font-size: 10px;
+        
+    }
+
+    footer p{
+        font-size: 8px;
+    }  
+}
+
+
+@media only screen and (min-width:680px) {
+
+    .main-header{
+     
+     flex-direction: column;
+     margin-top: 40%;
+    }
+
+    .main-header .Htext{
+        font-size: 75px;
+    }
+
+    .navbar{
+        padding: 15px 10px;
+        justify-content: center;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+    .navbar a{
+        font-size: 10px;
+        text-align: center;
+    }
+    .navbar .logo{
+        font-size: 20px;
+    }
+
+    .about-card{
+        width: 280px;
+        flex-direction: column;
+        margin-top: 35%;
+    }
+
+    .profile{
+        height: 150px;
+        width: 150px;
+
+    }
+    
+    .idtag{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .SK{
+        font-size: 15px;
+
+    }
+
+    .VM{
+        font-size: 10px;
+    }
+    
+
+    .con1{
+        margin-top: 20%;
+    }
+    .sub1 h2{
+        line-height: 1;
+        font-size: 15px;
+    }
+    .sub1 p{
+        font-size: 10px;
+    }
+    .s2{
+        height: 250px;
+        width: 250px;
+    }
+
+    .sub2 h2{
+        font-size: 15px;
+    }
+    .sub2 p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .prob2{
+        height: 250px;
+        width: 250px;
+        
+    }
+
+    .sub3 h2{
+        font-size: 15px;
+    }
+    .sub3 p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .codepc{
+        height: 250px;
+        width: 250px;
+    }
+    
+    .cont{
+        margin-top: 20%;
+        
+    }
+    .cont h1{
+        font-size: 50px;
+       
+    }
+
+    .myloc{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    input{
+        width: 30vh;
+    }
+    .inde{
+        width: 30vh;
+    }
+
+    .flogo{
+        font-size: 20px;
+        margin-left: 10px;
+        
+    }
+    .footwrap{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        padding: 10px;
+    }
+
+    .links{
+        font-size: 10px;
+    }
+
+    .Info{
+        font-size: 10px;
+        
+    }
+
+    footer p{
+        font-size: 8px;
+    }  
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+
+    .main-header{
+     
+     flex-direction: column;
+     margin-top: 20%;
+    }
+
+    .main-header .Htext{
+        font-size: 75px;
+    }
+
+    .navbar{
+        padding: 15px 10px;
+        justify-content: space-between;
+        
+    }
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+    .navbar a{
+        font-size: 10px;
+        text-align: center;
+    }
+    .navbar .logo{
+        font-size: 20px;
+    }
+
+    .about-card{
+        width: 800px;
+        margin-top: 10%;
+    }
+
+    .profile{
+        height: 250px;
+        width: 250px;
+        
+
+    }
+    
+    .idtag{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .SK{
+        font-size: 15px;
+
+    }
+
+    .VM{
+        font-size: 15px;
+    }
+    
+
+    .con1{
+        margin-top: 10%;
+    }
+    .sub1 h2{
+        
+        font-size: 30px;
+    }
+    .sub1 p{
+        font-size: 15px;
+    }
+    .con1 .pic1 img{
+        height: 400px;
+        width: 500px;
+    }
+
+    .sub2 h2{
+        font-size: 30px;
+    }
+    .sub2 p{
+        font-size: 15px;
+    }
+
+    .prob2{
+        height: 400px;
+        width: 500px;
+        
+    }
+
+    .sub3 h2{
+        font-size: 30px;
+    }
+    .sub3 p{
+        font-size: 15px;
+        
+    }
+
+    .codepc{
+        height: 400px;
+        width: 500px;
+    }
+    
+    .cont{
+        margin-top: 10%;
+        
+    }
+    .cont h1{
+        font-size: 70px;
+       
+    }
+
+    .myloc{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    input{
+        width: 30vh;
+    }
+    .inde{
+        width: 30vh;
+    }
+    .footwrap{
+        text-align: center;
+    }
+    .flogo{
+        font-size: 20px;
+        margin-left: 10px;
+        
+    }
+
+    .links{
+        font-size: 15px;
+    }
+
+    .Info{
+        font-size: 15px;
+        
+    }
+
+    footer p{
+        font-size: 10px;
+    }  
+}
+
+
+@media only screen and (min-width:1200px) {
+
+    .main-header{
+     margin-top: 10%;
+    }
+
+    .main-header .Htext{
+        font-size: clamp(3rem, 10vw, 10rem);
+    }
+
+    .navbar{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    .navbar a{
+        font-size: 15px;
+        text-align: center;
+    }
+    .navbar .logo{
+        font-size: 25px;
+    }
+
+    .about-card{
+        width: 1000px;
+        margin-top: 10%;
+    }
+
+    .profile{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .idtag{
+        font-size: 17px;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+    
+
+    .con1{
+        margin-top: 7%;
+    }
+    .sub1 h2{
+        font-size: 40px;
+    }
+    .sub1 p{
+        font-size: 20px;
+    }
+    .s2{
+        height: 500px;
+        width: 700px;
+    }
+
+    .sub2 h2{
+        font-size: 40px;
+    }
+    .sub2 p{
+        font-size: 20px;
+    }
+
+    .prob2{
+        height: 500px;
+        width: 700px;
+    }
+
+    .sub3 h2{
+        font-size: 40px;
+    }
+    .sub3 p{
+        font-size: 20px;
+        
+    }
+
+    .codepc{
+        height: 500px;
+        width: 700px;
+    }
+    
+    .cont{
+        margin-top: 10%;
+        
+    }
+    .cont h1{
+        font-size: 70px;
+       
+    }
+
+    .myloc{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    input{
+        width: 30vh;
+    }
+    .inde{
+        width: 30vh;
+    }
+    
+    .links{
+        font-size: 17px;
+    }
+
+    .Info{
+        font-size: 17px;
+        
+    }
+
+    footer p{
+        font-size: 13px;
+    }  
+}
+
+
