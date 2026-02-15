@@ -82,6 +82,7 @@ nav{
     margin-bottom: 1.5rem;
     background: linear-gradient(to bottom, white, #000000);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     transition: all 0.5s;
 }
@@ -407,9 +408,9 @@ footer p{
 }
 .footwrap{
     padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .links{
@@ -1169,17 +1170,10 @@ nav,header,section,footer{
         font-size: 17px;
         
     }
-    .form-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-}
 
     footer p{
         font-size: 13px;
     }  
 }
-
 
 
